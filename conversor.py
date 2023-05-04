@@ -71,7 +71,7 @@ while True:
             print(
                 '''Obrigado por querer nos conhecer 😁
                 
-Este programa está na versão \033[32m[1.5]\033[0m, foi desenvolvido por:
+Este programa está na versão \033[32m[2.0]\033[0m, foi desenvolvido por:
 \033[35m> João Victor Ferreira - 3424143
 \033[34m> Arthur Cardoso de Lima - 33561095
 \033[33m> Guilherme Gonçalves Santos - 33009236
