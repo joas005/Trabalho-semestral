@@ -16,22 +16,24 @@ while True:
             while True:
                 os.system('cls' if os.name == 'nt' else 'clear')
                 base = input(
-                    "Você deseja converter seu decimal para qual base?\n\n\033[35m[1] Binário.\n\033[34m[2] Hexadecimal.\n\033[36m[3] Octadecimal.\033[0m\n\n> ")
+                    "Você deseja converter seu decimal para qual base?\n\n\033[35m[1] Binário.\n\033[34m[2] Hexadecimal.\n\033[36m[3] Octal.\033[0m\n\n> ")
                 numConvertido = ''
 
                 match (base):
                     case '1':
+                        sistema = '\033[35mbinário\033[0m'
+                        print(f'\nVocê escolheu o sistema {sistema}.')
                         numInserido = int(input("Insira seu número decimal aqui: "))
                         numDecimal = numInserido
-                        sistema = '\033[35mbinário\033[0m'
                         while numDecimal > 0:
                             numConvertido += str(numDecimal % 2)
                             numDecimal = numDecimal // 2
 
                     case '2':
+                        sistema = '\033[34mhexadecimal\033[0m'
+                        print(f'\nVocê escolheu o sistema {sistema}.')
                         numInserido = int(input("Insira seu número decimal aqui: "))
                         numDecimal = numInserido
-                        sistema = '\033[34mhexadecimal\033[0m'
                         hex = [0, 1, 2, 3, 4, 5, 6, 7, 8,
                                9, 'A', 'B', 'C', 'D', 'E', 'F']
                         while numDecimal > 0:
@@ -39,9 +41,10 @@ while True:
                             numDecimal = numDecimal // 16
 
                     case '3':
+                        sistema = '\033[36moctal\033[0m'
+                        print(f'\nVocê escolheu o sistema {sistema}.')
                         numInserido = int(input("Insira seu número decimal aqui: "))
                         numDecimal = numInserido
-                        sistema = '\033[36moctadecimal\033[0m'
                         while numDecimal > 0:
                             numConvertido += str(numDecimal % 8)
                             numDecimal = numDecimal // 8
